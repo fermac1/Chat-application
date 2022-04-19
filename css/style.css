@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../images/img2.jpeg');
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+	color: #fff;
+}
+
+.container{
+    text-align: center;
+    display: flex;  
+    width: 100%;
+}
+.flex-wrap{
+    margin: auto;
+    height: 100%;
+    width: 30rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    padding: 15px 25px;
+    background-image: url('../images/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+h4{
+    font-size: 2.2rem;
+}
+p, h4{
+    color: #ffffff;
+    
+}
+a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+.error{
+    color: #ca3131;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+.btn{
+    background: #5353B4;
+    color: #ffffff;
+    text-transform: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    background:  none;
+    font-size: 18px;
+}
+.input-field .open_eye{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    cursor: pointer;
+}
+input[type=text]:not(.browser-default).validate+label{
+    font-size: 1rem;
+}
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+    color: white;
+}
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 5px;
+    height: 25px;
+} 
+input[type=text]:not(.browser-default){
+    background-color: transparent;
+}
+input[type=email]:not(.browser-default).validate+label{
+    font-size: 1rem;
+}
+input[type=email]:not(.browser-default):focus:not([readonly])+label{
+    color: white;
+}
+input[type=email]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 5px;
+    height: 25px;
+} 
+input[type=email]:not(.browser-default){
+    background-color: transparent;
+}
+input[type=password]:not(.browser-default).validate+label{
+    font-size: 1rem;
+}
+input[type=password]:not(.browser-default):focus:not([readonly])+label{
+    color: white;
+}
+input[type=password]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #fff;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0px 5px;
+    height: 25px;
+} 
+input[type=password]:not(.browser-default){
+    background-color: transparent;
+}
+input{
+    color: #ffffff;
+}
+input:focus{
+    color: black;
+}
+@media screen and (max-width: 480px) {
+    .flex-wrap {	  
+      width: 100%;
+      height: 100vh;
+    }
+    h4{
+        font-size: 2.2rem;
+    }
+  }
+  
+  @media screen and (min-width: 480px) {  
+    .flex-wrap {	  
+      width: 30rem;
+      margin: 0 auto;
+    }
+    }
+  /* [type="checkbox"]:filled-in:checked+span:not(.lever):after{
+    border: 2px solid white;
+    background-color:  white;
+  }  */
+#errorAlert{
+    height: 40px;
+    border-right: 3px solid  #ff4e6b;
+    border-left: 3px solid  #ff4e6b;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background:  #ffcbd3;
+    text-align: left;
+    color: black;
+}
+.icon{
+    color: #ff4e6b;
+}
+/* style for the splash modal */
+.container_modal{
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 200;
+    overflow: auto;
+    top: 0;
+    max-height: 100%;
+    padding-top: 0%;
+    animation-name: background;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes background {
+0%   {background-color: purple;}
+50%  {background-color: #5353B4;}
+100% {background-color:rgb(4, 4, 29);}
+}
+
+.container_modal.display-none{
+    background: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    overflow: auto;
+    top: 0;
+    max-height: 100%;
+    padding-top: 0%;
+    transition: all 4s;
+}
+
+/* this is the animation of fade in for the  peng text */
+@keyframes fadeIn{
+    to{
+        opacity:1; 
+    }
+
+}
+
+.content{
+ display: flex;
+background: #5353B4;
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 30rem;
+width: 100%;
+height: 100vh;
+margin: auto;
+flex-direction: column;
+justify-content: space-between;
+}
+
+    .logo{
+        display: flex;
+        background-color: none;
+        width: 50%;
+        height: 30%;
+        margin:35% auto;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo span{
+        color: rgb(7, 0, 10);
+        font-size: 100px;
+        font-family: 'Great Vibes';
+        opacity: 0; /* this is for the animation*/
+        animation: fadeIn 2s ease-in forwards;
+    }
+
+    .svg{
+        display: flex;
+        width: 100%;
+        
+    }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+
+       <!-- it holds the username Box and the search box -->
+       <div class="header" id="header">
+
+        <!-- the username and the user image Box -->
+        <div class="name_pics" id="name_pics">
+            <a href="profile.html" class="name_pics">
+                <img src="../images/tbw.jpg" alt="profile image" id="p-img" class="p-img"> 
+                <span class="pname" id="pname">Terence</span>
+            </a>
+        </div>
+        <!-- The search Button at the top with username..... onclick it runs a javascript code -->
+        <div class="topBtn">
+            
+            
+                <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger more' href='#' data-target='dropdown1'>
+                <i class="material-icons" id="more_vert">more_vert</i></a>
+        </div>  
+       
+    </div>
+    <form method="post">
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">Profile</a></li>
+            <li><a href="#!">Search</a></li>
+            <li class="divider" tabindex="-2"></li>
+            <li><a href="#!">Help</a></li>
+            <li><a href="#!">LogOut</a></li>
+        </ul>
+       
+   </form>      
+        <div class="mcontent">
+            <div class="messages" id="messages">
+                
+
+
+            </div>
+            
+        </div>
+
+
+        <div class="bottom">
+            <div class="inputDiv">
+                <input type="text" class="mtype" id="mtype" placeholder="Type a message here...">
+            </div>
+            <div class="send">
+                <button  class="sendBtn" id="sendBtn" onclick="sending()">
+                    <i class="material-icons" >send</i>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="../js/materialize.min.js "></script>
+ <script src="../js/script.js "></script>
+</body>
+</html>

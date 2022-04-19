@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: "PT Sans"  "sans-serif";
+}
+
+
+/* the container holding the whole box */
+ .container{
+     display: flex;
+    background-image: url(../images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 30rem;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    box-shadow: 0 10px 4px 0 whitesmoke;
+    flex-direction: column;
+}
+
+/* the header of the chat box*/
+ .header{
+     display: flex;
+     background-color: none;
+     box-shadow: 0 5px 4px 0 whitesmoke;
+     height: 7vh;
+     justify-content: space-between;
+    width: 100%;
+ }
+
+ /* the box holding the username and user image */
+ .name_pics{
+     display: flex;
+     width: 40%;
+     background-color:none;
+     height: 7vh;
+     align-items: center;
+
+ }
+
+
+/* .pname-link{
+ margin-top: 5px;
+
+} */
+ /* username design */
+ .pname{
+     color:white;
+     font-weight: 400;
+     font-size: 1.6rem;
+     margin-left: 5px;
+
+ }
+
+
+ /* user image design */
+.p-img{
+    margin-left: 10px;
+    width: 40px;
+    height: 40PX;
+    border-radius: 50%;
+   
+}
+
+
+.topBtn{
+    display: flex;
+    height: 7vh;
+    background-color:transparent;
+    align-items: center;
+}
+
+.dropdown-content{
+    position: relative;
+    left: -33px;
+    top: -55px;
+}
+
+.dropdown-content li > a, .dropdown-content li > span{
+    color: white; 
+    background-color: rgb(7, 0, 10);
+    
+}
+
+.dropdown-content li > a:hover, .dropdown-content li > span{
+    background-color: white;
+    color: rgb(7, 0, 10);
+}
+
+/* the div holding the message container */
+
+.mcontent{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    
+}
+
+
+/* this is the main holding all messages going out and coming in */
+.messages{
+ display: flex;
+ padding: 0 10px;
+ margin: 10px 0;
+ background-color:transparent;
+ flex-grow: 1;
+ flex-direction: column;
+ align-items: flex-end;
+ overflow-y: scroll;
+ /* overflow-y: hidden; */
+
+ scrollbar-width: none;
+ 
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+/* .messages::-webkit-scrollbar{
+    display: none;
+} */
+
+/* the ul holding the list box below */
+.mlist{
+    display: flex;
+ align-self: flex-end;
+    
+}
+
+
+
+/* the list box holding the paragraph and the user pics  */
+.mBox{
+    display: flex;
+    max-width: 20rem;
+    width: fit-content;
+    padding: 8px;
+    background-color: #5353B4;
+    border-radius: 15px 15px 0 15px;
+    margin: 2px 0;
+    word-wrap: break-word;
+
+}
+
+
+/* paragraph holding the users text */
+.para{
+    align-self:center ;
+    max-width: 15rem;
+    width: 100%;
+}
+
+/* the div holding everything at the buttom */
+.bottom{
+    display: flex;
+
+}
+
+/* the div holding the input */
+.inputDiv{
+    width: 90%;
+    padding-left: 5px;
+}
+
+/* the input text */
+input[type="text"]:not(.browser-default){
+    
+    width: 100%;
+    color: white;
+    border-bottom:  3px solid #5353B4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ 
+}
+
+/* the input text when clicked */
+input[type="text"]:not(.browser-default):focus:not([readonly]){
+ background-color:#5353B4 ;
+ color: black;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ border-bottom-color: #5353B4;
+}
+
+/* the send button */
+.sendBtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 10%;
+    color: none;
+}
+
+/* the send button When clicked */
+.sendBtn:focus{
+    background-color: transparent;
+}
+
+/* icon of the send button */
+ .material-icons{
+    color: #5353B4;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 5px;   
+}
+.time{
+    font-size: .8rem;
+}
+
+/* for the incoming box */
+
+/* this is the ul holding the li(incoming message) */
+ .mlist2{
+    margin: 10px auto 5px 0;
+
+} 
+
+/* this is the the li named as incomming message box */
+.incomingmBox{
+    display: flex;
+    max-width: 20rem;
+    padding: 8px;
+    background-color: pink;
+    border-radius: 15px 15px 15px 0;
+    margin: 2px 0;
+    word-wrap: break-word;
+}
+
+/* paragraph holding the message in the incoming message box */
+.para2{
+    align-self:center ;
+    padding-left: 5px;
+    max-width: 15rem;
+    width: 100%;
+    color: #5353B4;
+}
+
+/* image in the incoming message box */
+.p-img2{
+    margin-left: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;  
+}

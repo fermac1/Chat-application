@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bgimage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: "PT Sans"  "sans-serif";
+}
+
+ .container{
+     display: flex;
+    background-image: url(../images/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 30rem;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    box-shadow: 0 10px 4px 0 whitesmoke;
+    flex-direction: column;
+}
+
+
+
+/* the div at the top of the page*/
+.header{
+    display: flex;
+    background-color: none;
+    box-shadow: 0 5px 4px 0 whitesmoke;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* This is holding the  svg and the message button */
+.content{
+    /* display: flex; */
+    background-color: rgb(7, 0, 10);
+    opacity: 0.9;
+    padding: 5px;
+    max-width: 30rem;
+    width: 100%;
+    height: 93vh;
+    margin: auto;
+    box-shadow: 0 10px 4px 0 whitesmoke;   
+}
+
+.topBtn{
+    display: flex;
+    height: 7vh;
+    background-color:transparent;
+    align-items: center;
+    /* width: 5rem; */
+}
+/* div holding the name and small profile pics */
+.name_pics{
+    display: flex;
+    width: 40%;
+    background-color:none;
+    height: 7vh;
+    align-items: center;   
+}
+
+/* Div holding the profile image/name at the top of the page */
+/* .name_pics:hover{
+    background-color: #5353B4;
+    opacity: 0.5;
+} */
+/* profile name at the top of the page */
+.pname{
+    color:white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+/* profile image at the top of the page */
+.profile_image{
+    border:3px solid rgb(7, 0, 10);
+    display: flex;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.profile_image img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+   
+}
+
+
+/* the first search button  */
+.searchBtn{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/*the 1st search button when clicked*/
+
+
+
+/*the 1st search button when hovered */
+.material-icons:hover{
+    background-color: transparent;
+    
+}
+
+/* material icon for the 1st search button */
+.material-icons{
+    color: #5353B4;
+}
+
+
+
+/* all stuffs created in java script */
+
+/* search div holding the search textbox and the 2nd search button*/
+
+
+.dropdown-content{
+    position: relative;
+    left: -23px;
+    top: -55px;
+
+}
+
+.dropdown-content li > a, .dropdown-content li > span{
+    color: white; 
+    background-color: rgb(7, 0, 10);
+    
+}
+
+.dropdown-content li > a:hover, .dropdown-content li > span{
+    background-color: white;
+    color: rgb(7, 0, 10);
+}
+
+
+
+
+/* The svg Div */
+
+.svg{
+    background-image: url(../images/bgimage.jpg);
+    background-size: cover;
+    margin: 30% auto;
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+    box-shadow:-8px 8px 4px 2px #5353B4 ;
+
+}
+
+.svg:hover{
+    box-shadow:-8px 8px 4px 2px white ;
+
+}
+
+.svg_text{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: grey;
+    opacity: 0.7;
+    bottom: 100px;
+}
+
+
+
+
+
+
+/* The message button */
+
+
+/* for thee color of the massage button*/
+.cyan{
+    background-color: #5353B4 !important;
+}
+
+
+.addBtn{
+    position: fixed;
+    z-index: 1;
+    top: 80%;
+    left: 60%;
+}
+
+@media screen and (max-width:500px) {
+    .addBtn{
+        left: 80%;
+    }
+}
+
+
+
+/* The icon for the message */
+.addBtn .material-icons{
+    color: rgb(7, 0, 10);
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    color: white;
+}
+
+
+
+/* contact is to show the people connected with */
+.contact{
+    display: block;
+}
+.firstContact{
+    background-color: #5353B4;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+    margin: 5px 3px;
+}
+
+.firstContact:hover{
+    opacity: 0.5;
+}
+
+
+/* Connect modal */
+
+.connectmodal{
+    background-color:  rgb(0, 0, 0);
+    background-color:  rgba(0, 0, 0, 0.4);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    top: 0;
+    max-height: 100%;
+    padding-top: 0%;
+}
+
+.modal_content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 28rem;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.modal_content label{
+    color: #5353B4;
+    font-weight: 1000;
+
+}
+.btn{
+    background-color: #5353B4;
+    width: 30%;
+    margin: auto;
+}
+
+.btn:hover{
+    background-color:rgb(7, 0, 10);
+}
+
+
+input[type="text"]:not(.browser-default){
+    border-bottom: 1px solid #5353B4;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]){
+     background-color:#5353B4 ;
+    border-bottom: 2px solid #5353B4;
+    border-radius: 10px 10px 0 0;
+}
+
+
+
+/* The search Page */
+.searchdiv{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[type="search"]:not(.browser-default){
+    width: 25rem;
+    color: white;
+    word-wrap: break-word;
+     border-bottom:  3px solid #5353B4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+/* the search text box when clicked */
+input[type="search"]:not(.browser-default):focus:not([readonly]){
+    background-color:#5353B4 ;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #5353B4;
+}
+
+.searchBtn2{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    align-items: center;   
+}
+
+
+
+/* 2nd search button when hovered */
+
+
+/* material icon for the second search button */
+
+/* for the button */
+.acceptDiv{
+    display: flex;
+    padding: 5px;
+    margin: 10px 0;
+    flex-direction: column;
+}
+h5, p{
+    padding: 3px 10px;
+}
+.nameDiv{
+    display: flex;
+}
+.nameDiv img{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 5px;
+    width:100%;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.buttons button{
+    background-color: rgb(7, 0, 10);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 48%;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button:hover{
+    background-color: none;
+}
